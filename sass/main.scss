@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/fonts";
 @import "./base/common";
 @import "./components/title-button";
@@ -7,6 +8,7 @@
 @import "./components/form";
 @import "./components/modal";
 @import "./components/logo";
+@import "./layouts/about";
 @import "./layouts/section";
 @import "./layouts/header";
 @import "./layouts/footer";

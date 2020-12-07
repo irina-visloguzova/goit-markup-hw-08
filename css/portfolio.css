@@ -46,6 +46,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -63,13 +64,31 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
   /*outline: 2px solid tomato;*/
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 img {
@@ -99,12 +118,6 @@ p {
 .title {
   font-weight: 700;
   color: #212121;
-}
-
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
 }
 
 .list {
@@ -452,6 +465,10 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
+}
+
+.activity-img {
+  display: none;
 }
 
 .header {

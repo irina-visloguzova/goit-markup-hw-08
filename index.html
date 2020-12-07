@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
@@ -47,7 +47,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
     <main>
       <section class="hero dark-bg">
         <div class="container hero-contant">
@@ -79,13 +79,13 @@
         </div>
       </section>
       <!--activity-of-the-company-->
-      <section class="section activity">
+      <section class="section activity activity-img">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list flexbox">
             <li class="activity-title">
               <h3 class="list-title">Десктопные приложения</h3>
-              <img src="img/box-1.jpg" alt="руки печатают на клавиатуре" width="370" height="294" />
+              <img class="" src="img/box-1.jpg" alt="руки печатают на клавиатуре" width="370" height="294" />
             </li>
             <li class="activity-title">
               <h3 class="list-title">Мобильные приложения</h3>
@@ -104,7 +104,21 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list flexbox">
             <li class="team-title">
-              <img src="img/igor.jpg" alt="мужчина в очках" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./img/comand/desktop/igor-270.jpg 1x, ./img/comand/desktop/igor-270-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/comand/tablet/igor-354.jpg 1x, ./img/comand/tablet/igor-354-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/comand/mob/igor-480.jpg 1x, ./img/comand/mob/igor-480-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/comand/desktop/igor-270.jpg" alt="мужчина в очках" />
+              </picture>
               <h3 class="title-name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
               <ul class="list social-icons">
@@ -163,7 +177,21 @@
               </ul>
             </li>
             <li class="team-title">
-              <img src="img/olga.jpg" alt="женщина в очках" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./img/comand/desktop/olga-270.jpg 1x, ./img/comand/desktop/olga-270-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/comand/tablet/olga-354.jpg 1x, ./img/comand/tablet/olga-354-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/comand/mob/olga-480.jpg 1x, ./img/comand/mob/olga-480-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/comand/desktop/olga-270.jpg" alt="женщина в очках" />
+              </picture>
               <h3 class="title-name">Ольга Репина</h3>
               <p class="profession">Frontend Developer</p>
               <ul class="list social-icons">
@@ -221,8 +249,23 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-title">
-              <img src="img/nikolay.jpg" alt="улыбающийся мужщина" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./img/comand/desktop/nikolay-270.jpg 1x, ./img/comand/desktop/nikolay-270-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/comand/tablet/nikolay-354.jpg 1x, ./img/comand/tablet/nikolay-354-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/comand/mob/nikolay-480.jpg 1x, ./img/comand/mob/nikolay-480-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/comand/desktop/nikolay-270.jpg" alt="улыбающийся мужщина" />
+              </picture>
               <h3 class="title-name">Николай Тарасов</h3>
               <p class="profession">Marketing</p>
               <ul class="list social-icons">
@@ -281,7 +324,21 @@
               </ul>
             </li>
             <li class="team-title">
-              <img src="img/michail.jpg" alt="мужчина в очках" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./img/comand/desktop/mihail-270.jpg 1x, ./img/comand/desktop/mihail-270-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/comand/tablet/mihail-354.jpg 1x, ./img/comand/tablet/mihail-354-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/comand/mob/mihail-480.jpg 1x, ./img/comand/mob/mihail-480-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/comand/desktop/mihail-270.jpg" alt="мужчина в очках" />
+              </picture>
               <h3 class="title-name">Михаил Ермаков</h3>
               <p class="profession">UI Designer</p>
               <ul class="list social-icons">

@@ -1,24 +1,72 @@
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/images-hero/header-480.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../img/images-hero/header-480-2x.jpg);
+  }
+
+  @include for-size(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/images-hero/header-768.jpg);
+    font-size: 44px;
+    line-height: 1.36;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/images-hero/header-768-2x.jpg);
+    }
+  }
+
+  @include for-size(desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/images-hero/header-1200.jpg);
+    font-size: 44px;
+    line-height: 1.36;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/images-hero/header-1200-2x.jpg);
+    }
+  }
 }
 
 .hero-contant {
   justify-content: center;
-  max-width: 696px;
+  max-width: 360px;
+
+  @include for-size(desktop) {
+    max-width: 696px;
+  }
 }
 
 .page-title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-cl;
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

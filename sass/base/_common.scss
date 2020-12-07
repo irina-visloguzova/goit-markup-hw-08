@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -23,13 +24,24 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-  /*outline: 2px solid tomato;*/
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 img {
@@ -61,11 +73,11 @@ p {
   color: $title-cl;
 }
 
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
+//.flexbox {
+// display: flex;
+// justify-content: space-between;
+// padding: 0;
+//}
 
 .list {
   list-style: none;
