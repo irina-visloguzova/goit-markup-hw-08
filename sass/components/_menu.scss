@@ -1,0 +1,12 @@
+.menu {
+  display: inline-flex;
+}
+
+.menu-item {
+  position: relative;
+  padding-bottom: 32px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}

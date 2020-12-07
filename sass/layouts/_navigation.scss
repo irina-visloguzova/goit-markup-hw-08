@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.current {
+  color: $accent-cl;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 2px;
+  }
+}
+
+.link-menu.current {
+  color: $accent-cl;
+}

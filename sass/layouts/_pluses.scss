@@ -1,0 +1,43 @@
+.section-pluses {
+  padding-top: 94px;
+}
+
+.title-pluses {
+  margin-bottom: 10px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-cl;
+}
+
+.list-pluses:not(:last-child) {
+  width: calc(100% - 90px) / 4;
+  margin-right: 30px;
+}
+
+.list-pluses::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $team-bg;
+  border-radius: 4px;
+}
+
+.list-pluses:nth-child(1)::before {
+  background-image: url(../img/icons/antenna.svg);
+}
+
+.list-pluses:nth-child(2)::before {
+  background-image: url(../img/icons/clock.svg);
+}
+
+.list-pluses:nth-child(3)::before {
+  background-image: url(../img/icons/diagram.svg);
+}
+
+.list-pluses:nth-child(4)::before {
+  background-image: url(../img/icons/astronaut.svg);
+}

@@ -1,0 +1,18 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.portfolio-nav {
+  margin-bottom: 50px;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.potfolio-menu-item:not(:last-child) {
+  margin-right: 8px;
+}
+

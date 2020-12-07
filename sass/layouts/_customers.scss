@@ -1,0 +1,66 @@
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 1px solid $accent-cl;
+    border-radius: 4px;
+  }
+}
+
+.customers-icons-svg {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $icons;
+}
+
+.customers-link:hover .customers-icons-svg,
+.customers-link:focus .customers-icons-svg {
+  fill: $accent-cl;
+}
+
+.customers-icons-svg1 {
+  width: 44px;
+  height: 49px;
+}
+
+.customers-icons-svg2 {
+  width: 40px;
+  height: 52px;
+}
+
+.customers-icons-svg3 {
+  width: 41px;
+  height: 43px;
+}
+
+.customers-icons-svg4 {
+  width: 80px;
+  height: 42px;
+}
+
+.customers-icons-svg5 {
+  width: 59px;
+  height: 47px;
+}
+
+.customers-icons-svg6 {
+  width: 88px;
+  height: 45px;
+}
