@@ -3,22 +3,30 @@
   padding-bottom: 60px;
 
   .container {
-    display: flex;
+    //display: flex;
+  }
+
+  @include for-size(mobile) {
+    text-align: center;
   }
 }
 
 .footer .logo {
-  display: inline-block;
+  //display: inline-block;
   margin-bottom: 20px;
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+
+  @include for-size(mobile) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer-social {
-  margin-left: 70px;
-  margin-right: 93px;
+  //margin-left: 70px;
+  //margin-right: 93px;
 
   .title {
     margin-top: 15px;
@@ -26,6 +34,13 @@
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;
+
+    @include for-size(mobile) {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   .social-icons-svg {
     fill: $white-cl;
@@ -50,7 +65,7 @@
   }
   input {
     width: 358px;
-    margin-right: 12px;
+    //margin-right: 12px;
     padding: 15px 0 15px 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -60,7 +75,12 @@
     border-radius: 4px;
     background: transparent;
   }
+
+  @include for-size(mobile) {
+    padding-top: 60px;
+  }
 }
+
 .newslatter-btn {
   display: inline-flex;
   align-items: center;
@@ -73,6 +93,10 @@
   border-radius: 4px;
   background: $accent-cl;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include for-size(mobile) {
+    margin-top: 20px;
+  }
 }
 .newslatter-btn-ico {
   width: 24px;

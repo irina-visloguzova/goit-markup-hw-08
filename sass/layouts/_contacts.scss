@@ -9,4 +9,9 @@
   margin-bottom: 9px;
   font-style: normal;
   color: $white-cl;
+
+  @include for-size(mobile) {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
 }

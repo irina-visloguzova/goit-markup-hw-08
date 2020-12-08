@@ -1,5 +1,9 @@
 .header {
   padding-top: 24px;
+
+  @include for-size(mobile) {
+    padding-top: 16px;
+  }
 }
 
 .header-container {
@@ -14,7 +18,11 @@
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header-contacts-item {
@@ -63,3 +71,12 @@
 .link-mail {
   align-items: center;
 }
+
+.menu {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+

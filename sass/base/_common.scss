@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 body {
@@ -73,11 +73,20 @@ p {
   color: $title-cl;
 }
 
-//.flexbox {
-// display: flex;
-// justify-content: space-between;
-// padding: 0;
-//}
+.flexbox {
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
 
 .list {
   list-style: none;

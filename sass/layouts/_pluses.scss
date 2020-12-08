@@ -1,9 +1,10 @@
 .section-pluses {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @include for-size(desktop) {
-      padding: 94px;
-     }
+    padding: 94px;
+  }
 }
 
 .title-pluses {
@@ -15,8 +16,17 @@
 }
 
 .list-pluses:not(:last-child) {
-  width: calc(100% - 90px) / 4;
-  margin-right: 30px;
+  padding-bottom: 30px;
+
+  @include for-size(tablet) {
+    width: calc(100% - 90px) / 4;
+    margin-right: 30px;
+  }
+
+  @include for-size(desktop) {
+    width: calc(100% - 90px) / 4;
+    margin-right: 30px;
+  }
 }
 
 .list-pluses::before {

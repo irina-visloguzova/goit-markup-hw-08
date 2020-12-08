@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
@@ -27,6 +27,12 @@
               <a href="#" class="link link-menu">Контакты</a>
             </li>
           </ul>
+          <button class="mobile-menu-btn" data-menu-button>
+            <svg class="mobile-menu-icon">
+            <use class="icon-menu" href="./img/sprite.svg#menu-mob"></use>
+            <use class="icon-cross is-open" href="./img/sprite.svg#close"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="list header-contacts">
           <li class="header-contacts-item">
@@ -47,7 +53,20 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
+    <div class="mob-menu is-open" id="mobile-main-nav" data-menu>
+      <ul class="list mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="link mobile-link-menu current">Студия</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="link mobile-link-menu">Портфолио</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="link mobile-link-menu">Контакты</a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero dark-bg">
         <div class="container hero-contant">
