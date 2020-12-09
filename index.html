@@ -27,10 +27,10 @@
               <a href="#" class="link link-menu">Контакты</a>
             </li>
           </ul>
-          <button class="mobile-menu-btn" data-menu-button>
-            <svg class="mobile-menu-icon">
-            <use class="icon-menu" href="./img/sprite.svg#menu-mob"></use>
-            <use class="icon-cross is-open" href="./img/sprite.svg#close"></use>
+          <button class="mobile-menu-btn is-open" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
+            <svg width="40px" height="40px" class="mobile-btn-svg" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./img/sprite.svg#menu-mob"></use>
+              <use class="icon-cross" href="./img/sprite.svg#close"></use>
             </svg>
           </button>
         </nav>
@@ -54,8 +54,8 @@
         </ul>
       </div>
     </header>
-    <div class="mob-menu is-open" id="mobile-main-nav" data-menu>
-      <ul class="list mobile-menu">
+    <div class="mobile-menu" id="menu-conteiner" data-menu>
+      <ul class="mobile-menu-list list">
         <li class="mobile-menu-item">
           <a href="./index.html" class="link mobile-link-menu current">Студия</a>
         </li>
@@ -64,6 +64,22 @@
         </li>
         <li class="mobile-menu-item">
           <a href="#" class="link mobile-link-menu">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-auth-nav list contacts">
+        <li class="menu-item">
+          <a href="mailto:info@devstudio.com" class="mobile-link-nav"
+            ><svg width="16px" height="12px" class="svg-nav">
+              <use href="./images/icon/symbol-defs.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="menu-item">
+          <a href="tell:+380961111111" class="mobile-link-nav"
+            ><svg width="10px" height="16px" class="svg-nav">
+              <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use></svg
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </div>
@@ -612,5 +628,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

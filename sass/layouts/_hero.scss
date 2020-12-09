@@ -1,8 +1,10 @@
 .hero {
-  text-align: center;
-  padding: 118px 0;
+  height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/images-hero/header-480.jpg);
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -35,6 +37,7 @@
     font-size: 44px;
     line-height: 1.36;
     padding: 200px 0;
+    height: 600px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -48,10 +51,12 @@
 
 .hero-contant {
   justify-content: center;
-  max-width: 396px;
+  width: 100%;
+  padding-top: 118px;
 
   @include for-size(desktop) {
     max-width: 696px;
+    padding-top: 200px;
   }
 }
 

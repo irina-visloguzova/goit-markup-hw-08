@@ -174,8 +174,12 @@ p {
 }
 
 .title-button-home {
-  display: inline-block;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -780,13 +784,6 @@ p {
   margin-right: auto;
 }
 
-@media (min-width: 480px) {
-  .navigation {
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-}
-
 .current {
   color: #2196f3;
 }
@@ -933,6 +930,7 @@ p {
 
 .dark-bg {
   background-color: #2f303a;
+  width: 100%;
 }
 
 .dark-bg .title {

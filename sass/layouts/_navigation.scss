@@ -1,10 +1,12 @@
 .navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-right: auto;
   
 
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
+    margin-right: 0;
     justify-content: space-between;
     flex-grow: 1;
   }
