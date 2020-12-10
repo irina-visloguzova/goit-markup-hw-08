@@ -13,7 +13,12 @@
 
 .menu-item {
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
+  color: $black-cl;
+
+  @include for-size(tablet) {
+    padding-bottom: 32px;
+  }
 
   &:not(:last-child) {
     margin-right: 50px;
