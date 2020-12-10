@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid tomato;
+  //outline: 1px solid tomato;
 }
 
 body {
@@ -31,7 +31,6 @@ h3 {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  /*outline: 2px solid tomato;*/
 
   @include for-size(mobile) {
     width: 480px;
