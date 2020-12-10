@@ -1,7 +1,13 @@
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+
+  @include for-size(desktop) {
+    margin-right: auto;
+  }
 }
 
 .current {

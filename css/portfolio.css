@@ -218,6 +218,7 @@ p {
 @media (min-width: 768px) {
   .menu {
     display: inline-flex;
+    margin-top: 8px;
   }
 }
 
@@ -586,10 +587,11 @@ p {
 
 @media (min-width: 1200px) {
   .header-contacts {
-    display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     font-size: 14px;
     line-height: 1.14;
+    margin-top: 6px;
   }
 }
 
@@ -663,6 +665,8 @@ p {
 @media (min-width: 1200px) {
   .link-mail {
     align-items: center;
+    display: block;
+    width: 170px;
   }
 }
 
@@ -673,6 +677,8 @@ p {
 @media (min-width: 1200px) {
   .link-phone {
     margin-right: 30px;
+    display: block;
+    width: 150px;
   }
 }
 
@@ -753,8 +759,8 @@ p {
 }
 
 .mobile-menu-svg {
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   fill: #000000;
 }
 
@@ -969,7 +975,15 @@ p {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    margin-right: auto;
+  }
 }
 
 .current {

@@ -15,7 +15,7 @@
 
 .header-line {
   padding-top: 24px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $border-header;
 }
 
 .header-contacts {
@@ -31,10 +31,11 @@
   }
 
   @include for-size(desktop) {
-    display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     font-size: 14px;
     line-height: 1.14;
+    margin-top: 6px;
   }
 }
 
@@ -102,6 +103,8 @@
 .link-mail {
   @include for-size(desktop) {
     align-items: center;
+    display: block;
+    width: 170px;
   }
 }
 
@@ -109,6 +112,8 @@
   margin-right: 15px;
   @include for-size(desktop) {
     margin-right: 30px;
+    display: block;
+    width: 150px;
   }
 }
 

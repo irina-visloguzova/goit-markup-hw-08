@@ -3,6 +3,7 @@
 
   @include for-size(tablet) {
     display: inline-flex;
+    margin-top: 8px;
   }
 
   @include for-size(desktop) {
