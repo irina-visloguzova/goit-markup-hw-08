@@ -2,7 +2,6 @@
   $mobile: 480px;
   $tablet: 768px;
   $desktop: 1200px;
-
   @if $range == mobile-only {
     @media (max-width: #{$tablet-1}) {
       @content;
@@ -23,11 +22,6 @@
 }
 
 
-// usage
-// .my-box {
-// padding: 10px;
-
-// @include for-size(tablet) {
+//@include for-size(tablet) {
 //  padding: 20px;
-// }
-// }
+//}

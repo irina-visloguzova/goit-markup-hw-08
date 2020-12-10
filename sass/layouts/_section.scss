@@ -10,7 +10,6 @@
 
 .section-title {
   display: flex;
-  text-align: center;
   justify-content: center;
   padding-bottom: 30px;
   margin: 0;
@@ -20,8 +19,7 @@
   color: $title-cl;
 
   @include for-size(desktop) {
-    padding-bottom: 50px;
     font-size: 36px;
-    line-height: 1.16em;
+    padding-bottom: 50px;
   }
 }

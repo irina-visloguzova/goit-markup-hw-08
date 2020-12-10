@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
@@ -27,12 +27,6 @@
               <a href="#" class="link link-menu">Контакты</a>
             </li>
           </ul>
-          <button class="mobile-menu-btn is-open" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
-            <svg width="40px" height="40px" class="mobile-btn-svg" aria-label="Переключатель мобильного меню">
-              <use class="icon-menu" href="./img/sprite.svg#menu-mob"></use>
-              <use class="icon-cross" href="./img/sprite.svg#close"></use>
-            </svg>
-          </button>
         </nav>
         <ul class="list header-contacts">
           <li class="header-contacts-item">
@@ -53,36 +47,7 @@
           </li>
         </ul>
       </div>
-    </header>
-    <div class="mobile-menu" id="menu-conteiner" data-menu>
-      <ul class="mobile-menu-list list">
-        <li class="mobile-menu-item">
-          <a href="./index.html" class="link mobile-link-menu current">Студия</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="./portfolio.html" class="link mobile-link-menu">Портфолио</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#" class="link mobile-link-menu">Контакты</a>
-        </li>
-      </ul>
-      <ul class="mobile-auth-nav list contacts">
-        <li class="menu-item">
-          <a href="mailto:info@devstudio.com" class="mobile-link-nav"
-            ><svg width="16px" height="12px" class="svg-nav">
-              <use href="./images/icon/symbol-defs.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="menu-item">
-          <a href="tell:+380961111111" class="mobile-link-nav"
-            ><svg width="10px" height="16px" class="svg-nav">
-              <use href="./images/icon/symbol-defs.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </div>
+    </header>-->
     <main>
       <section class="hero dark-bg">
         <div class="container hero-contant">
@@ -91,36 +56,36 @@
         </div>
       </section>
       <!--our-pluses-->
-      <section class="section-pluses">
+     <section class="section-pluses">
         <div class="container">
           <ul class="list flexbox">
             <li class="list-pluses">
               <h3 class="title-pluses">Внимание к деталям</h3>
-              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <p class="text-pluses">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Пунктуальность</h3>
-              <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <p class="text-pluses">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Планирование</h3>
-              <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <p class="text-pluses">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="text-pluses">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
       </section>
       <!--activity-of-the-company-->
-      <section class="section activity activity-img">
+      <section class="section activity">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list flexbox">
             <li class="activity-title">
               <h3 class="list-title">Десктопные приложения</h3>
-              <img class="" src="img/box-1.jpg" alt="руки печатают на клавиатуре" width="370" height="294" />
+              <img src="img/box-1.jpg" alt="руки печатают на клавиатуре" width="370" height="294" />
             </li>
             <li class="activity-title">
               <h3 class="list-title">Мобильные приложения</h3>
@@ -132,7 +97,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!--our-team-->
       <section class="section team">
         <div class="container">
@@ -141,18 +106,18 @@
             <li class="team-title">
               <picture>
                 <source
-                  srcset="./img/comand/desktop/igor-270.jpg 1x, ./img/comand/desktop/igor-270-2x.jpg 2x"
+                  srcset="img/comand/desktop/igor-270.jpg 1x, img/comand/desktop/igor-270-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/comand/tablet/igor-354.jpg 1x, ./img/comand/tablet/igor-354-2x.jpg 2x"
+                  srcset="img/comand/tablet/igor-354.jpg 1x, img/comand/tablet/igor-354-2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/comand/mob/igor-480.jpg 1x, ./img/comand/mob/igor-480-2x.jpg 2x"
+                  srcset="img/comand/mob/igor-480.jpg 1x, img/comand/mob/igor-480-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./img/comand/desktop/igor-270.jpg" alt="мужчина в очках" />
+                <img src="img/comand/desktop/igor-270.jpg" alt="мужчина в очках" />
               </picture>
               <h3 class="title-name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
@@ -214,18 +179,18 @@
             <li class="team-title">
               <picture>
                 <source
-                  srcset="./img/comand/desktop/olga-270.jpg 1x, ./img/comand/desktop/olga-270-2x.jpg 2x"
+                  srcset="img/comand/desktop/olga-270.jpg 1x, img/comand/desktop/olga-270-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/comand/tablet/olga-354.jpg 1x, ./img/comand/tablet/olga-354-2x.jpg 2x"
+                  srcset="img/comand/tablet/olga-354.jpg 1x, img/comand/tablet/olga-354-2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/comand/mob/olga-480.jpg 1x, ./img/comand/mob/olga-480-2x.jpg 2x"
+                  srcset="img/comand/mob/olga-480.jpg 1x, img/comand/mob/olga-480-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./img/comand/desktop/olga-270.jpg" alt="женщина в очках" />
+                <img src="img/comand/desktop/olga-270.jpg" alt="женщина в очках" />
               </picture>
               <h3 class="title-name">Ольга Репина</h3>
               <p class="profession">Frontend Developer</p>
@@ -284,22 +249,21 @@
                 </li>
               </ul>
             </li>
-
             <li class="team-title">
               <picture>
                 <source
-                  srcset="./img/comand/desktop/nikolay-270.jpg 1x, ./img/comand/desktop/nikolay-270-2x.jpg 2x"
+                  srcset="img/comand/desktop/nikolay-270.jpg 1x, img/comand/desktop/nikolay-270-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/comand/tablet/nikolay-354.jpg 1x, ./img/comand/tablet/nikolay-354-2x.jpg 2x"
+                  srcset="img/comand/tablet/nikolay-354.jpg 1x, img/comand/tablet/nikolay-354-2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/comand/mob/nikolay-480.jpg 1x, ./img/comand/mob/nikolay-480-2x.jpg 2x"
+                  srcset="img/comand/mob/nikolay-480.jpg 1x, img/comand/mob/nikolay-480-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./img/comand/desktop/nikolay-270.jpg" alt="улыбающийся мужщина" />
+                <img src="img/comand/desktop/nikolay-270.jpg" alt="улыбающийся мужщина" />
               </picture>
               <h3 class="title-name">Николай Тарасов</h3>
               <p class="profession">Marketing</p>
@@ -361,18 +325,18 @@
             <li class="team-title">
               <picture>
                 <source
-                  srcset="./img/comand/desktop/mihail-270.jpg 1x, ./img/comand/desktop/mihail-270-2x.jpg 2x"
+                  srcset="img/comand/desktop/mihail-270.jpg 1x, img/comand/desktop/mihail-270-2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/comand/tablet/mihail-354.jpg 1x, ./img/comand/tablet/mihail-354-2x.jpg 2x"
+                  srcset="img/comand/tablet/mihail-354.jpg 1x, img/comand/tablet/mihail-354-2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/comand/mob/mihail-480.jpg 1x, ./img/comand/mob/mihail-480-2x.jpg 2x"
+                  srcset="img/comand/mob/mihail-480.jpg 1x, img/comand/mob/mihail-480-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img src="./img/comand/desktop/mihail-270.jpg" alt="мужчина в очках" />
+                <img src="img/comand/desktop/mihail-270.jpg" alt="мужчина в очках" />
               </picture>
               <h3 class="title-name">Михаил Ермаков</h3>
               <p class="profession">UI Designer</p>
@@ -483,11 +447,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> 
     <!--contacts-->
     <footer class="dark-bg container-footer">
-      <div class="container">
-        <div>
+      <div class="container footer-flex">
+        <div class="contact-footer">
           <a href="./index.html" class="logo-white"><span class="logo-web">Web</span>Studio</a>
           <ul class="list">
             <li class="footer-item">
@@ -569,7 +533,7 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> 
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -628,6 +592,5 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

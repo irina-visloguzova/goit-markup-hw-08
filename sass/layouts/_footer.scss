@@ -2,29 +2,55 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  .container {
+    @include for-size(desktop) {
+      display: flex;
+    }
+  }
+}
 
+.contact-footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 45px;
 
-  @include for-size(mobile-only) {
-    text-align: center;
+  @include for-size(tablet) {
+    width: 50%;
+  }
+
+  @include for-size(desktop) {
+    width: 440px;
+    padding-bottom: 0;
+    text-align: start;
   }
 }
 
 .footer .logo {
-  //display: inline-block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  @include for-size(mobile-only) {
-    margin-bottom: 8px;
+  @include for-size(desktop) {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include for-size(desktop) {
+    margin-bottom: 9px;
   }
 }
 
 .footer-social {
-  //margin-left: 70px;
-  //margin-right: 93px;
+  width: 100%;
 
   .title {
     margin-top: 15px;
@@ -32,16 +58,28 @@
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;
+    text-align: center;
 
-    @include for-size(mobile-only) {
-      margin-top: 60px;
-      margin-bottom: 20px;
-      margin-left: 0;
-      margin-right: 0;
+    @include for-size(tablet) {
+      margin-top: 5px;
+    }
+
+    @include for-size(desktop) {
+      text-align: start;
+      margin-top: 12px;
     }
   }
   .social-icons-svg {
     fill: $white-cl;
+  }
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+  @include for-size(desktop) {
+    margin-left: 70px;
+    margin-right: 93px;
+    width: 206px;
   }
 }
 
@@ -50,7 +88,8 @@
 }
 
 .footer-newslatter {
-  padding-top: 12px;
+  padding-top: 60px;
+  text-align: center;
 
   span {
     display: block;
@@ -60,10 +99,16 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @include for-size(desktop) {
+      width: 100%;
+      text-align: start;
+    }
   }
   input {
-    width: 358px;
-    //margin-right: 12px;
+    width: 100%;
+    margin-right: 12px;
     padding: 15px 0 15px 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -72,16 +117,34 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: transparent;
+
+    @include for-size(tablet) {
+      margin-right: 0px;
+    }
+
+    @include for-size(desktop) {
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+    }
   }
 
-  @include for-size(mobile-only) {
-    padding-top: 60px;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+  }
+
+  @include for-size(desktop) {
+    width: 100%;
+    padding-top: 12px;
   }
 }
-
 .newslatter-btn {
   display: inline-flex;
   align-items: center;
+  margin-top: 20px;
   padding: 10px 30px;
   color: $white-cl;
   font-size: 16px;
@@ -92,8 +155,9 @@
   background: $accent-cl;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  @include for-size(mobile-only) {
-    margin-top: 20px;
+  @include for-size(desktop) {
+    height: 50px;
+    margin-top: 0;
   }
 }
 .newslatter-btn-ico {

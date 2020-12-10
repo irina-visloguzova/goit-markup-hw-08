@@ -1,3 +1,11 @@
+.activity {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
 .activity-title {
   position: relative;
 }

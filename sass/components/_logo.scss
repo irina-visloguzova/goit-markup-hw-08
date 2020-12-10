@@ -7,16 +7,8 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $black-cl;
+  margin-right: 93px;
   padding-bottom: 25px;
-
-  @include for-size(mobile-only) {
-    padding-bottom: 16px;
-  }
-
-  @include for-size(desctop) {
-    margin-right: 93;
-    padding-bottom: 16px;
-  }
 }
 
 .logo-web {
