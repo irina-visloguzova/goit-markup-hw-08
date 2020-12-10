@@ -1,5 +1,13 @@
 .menu {
-  display: inline-flex;
+  display: none;
+
+  @include for-size(tablet) {
+    display: inline-flex;
+  }
+
+  @include for-size(desktop) {
+    display: inline-flex;
+  }
 }
 
 .menu-item {

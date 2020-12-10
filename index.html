@@ -12,21 +12,35 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
-          <ul class="list menu">
-            <li class="menu-item">
-              <a href="./index.html" class="link link-menu current">Студия</a>
-            </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="link link-menu">Портфолио</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="link link-menu">Контакты</a>
-            </li>
-          </ul>
+          <button type="button" class="mobile-menu-btn" data-menu-button>
+            <svg
+              class="mobile-menu-svg"
+              widht="40"
+              heigh="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="mobile-main-nav"
+            >
+              <use class="icon-menu" href="./img/sprite.svg#menu-mob"></use>
+              <use class="icon-cross" href="./img/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div >
+            <ul class="list menu">
+              <li class="menu-item">
+                <a href="./index.html" class="link link-menu current">Студия</a>
+              </li>
+              <li class="menu-item">
+                <a href="./portfolio.html" class="link link-menu">Портфолио</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link link-menu">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <ul class="list header-contacts">
           <li class="header-contacts-item">
@@ -38,7 +52,7 @@
             </a>
           </li>
           <li class="header-contacts-item">
-            <a href="tel:+380961111111" class="link link-menu-contacts">
+            <a href="tel:+380961111111" class="link link-menu-contacts link-phone">
               <svg class="header-icons-phone">
                 <use href="./img/sprite.svg#smartphone-icon"></use>
               </svg>
@@ -47,7 +61,43 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-main-nav" id="mobile-main-nav" data-menu>
+      <nav class="">
+        <ul class="list mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="./" class="link menu-item current">Студия</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="link menu-item">Портфолио</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#contacts" class="link menu-item">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list mobile-cont">
+        <li class="mobile-cont-item">
+          <a href="mailto:info@devstudio.com" class="link link-menu-contacts link-mail">
+            <svg class="header-icons-mail">
+              <use href="./img/sprite.svg#mail-icon"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-cont-item">
+          <a href="tel:+380961111111" class="link link-menu-contacts link-phone">
+            <svg class="header-icons-phone">
+              <use href="./img/sprite.svg#smartphone-icon"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!--Hero-->
     <main>
       <section class="hero dark-bg">
         <div class="container hero-contant">
@@ -56,20 +106,26 @@
         </div>
       </section>
       <!--our-pluses-->
-     <section class="section-pluses">
+      <section class="section-pluses">
         <div class="container">
           <ul class="list flexbox">
             <li class="list-pluses">
               <h3 class="title-pluses">Внимание к деталям</h3>
-              <p class="text-pluses">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <p class="text-pluses">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Пунктуальность</h3>
-              <p class="text-pluses">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <p class="text-pluses">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Планирование</h3>
-              <p class="text-pluses">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <p class="text-pluses">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
             </li>
             <li class="list-pluses">
               <h3 class="title-pluses">Современные технологии</h3>
@@ -97,7 +153,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!--our-team-->
       <section class="section team">
         <div class="container">
@@ -447,7 +503,7 @@
           </ul>
         </div>
       </section>
-    </main> 
+    </main>
     <!--contacts-->
     <footer class="dark-bg container-footer">
       <div class="container footer-flex">
@@ -533,7 +589,7 @@
           </button>
         </form>
       </div>
-    </footer> 
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -592,5 +648,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

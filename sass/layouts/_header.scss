@@ -1,11 +1,16 @@
-.header {
-  padding-top: 24px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 16px;
+
+  @include for-size(tablet) {
+    margin-top: 21px;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 24px;
+  }
 }
 
 .header-line {
@@ -14,14 +19,36 @@
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .header-contacts-item {
-  padding-bottom: 32px;
+  padding-bottom: 10px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 32px;
   }
 }
 
@@ -29,16 +56,28 @@
   vertical-align: middle;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: $main-text-color;
+
+  @include for-size(desktop) {
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+  }
 }
 
 .header-icons-mail {
   vertical-align: middle;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
   fill: $main-text-color;
+
+  @include for-size(desktop) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .link:hover .header-icons-mail,
@@ -61,5 +100,15 @@
 }
 
 .link-mail {
-  align-items: center;
+  @include for-size(desktop) {
+    align-items: center;
+  }
 }
+
+.link-phone {
+  margin-right: 15px;
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
+

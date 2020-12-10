@@ -1,0 +1,84 @@
+.mobile-main-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: $white-cl;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid $border-header;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.mobile-main-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-list,
+.mobile-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-item .menu-item {
+  font-size: 18px;
+  line-height: 1.16666;
+}
+
+.mobile-cont {
+  padding-top: 60px;
+
+  &-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.mobile-menu-btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $white-cl;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu-btn .icon-cross {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu-svg {
+  width: 24px;
+  height: 16px;
+  fill: $black-cl;
+}
+
+.mobile-menu-btn:hover .mobile-menu-svg,
+.mobile-menu-btn:focus .mobile-menu-svg {
+  fill: $accent-cl;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

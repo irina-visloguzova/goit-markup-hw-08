@@ -212,7 +212,19 @@ p {
 }
 
 .menu {
-  display: inline-flex;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    display: inline-flex;
+  }
 }
 
 .menu-item {
@@ -508,8 +520,14 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
-  margin-right: 93px;
+  margin-right: 88px;
   padding-bottom: 25px;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-web {
@@ -527,14 +545,23 @@ p {
   color: #ffffff;
 }
 
-.header {
-  padding-top: 24px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    margin-top: 24px;
+  }
 }
 
 .header-line {
@@ -543,31 +570,75 @@ p {
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media (min-width: 768px) {
+  .header-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .header-contacts-item {
-  padding-bottom: 32px;
+  padding-bottom: 10px;
 }
 
-.header-contacts-item:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 1200px) {
+  .header-contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts-item {
+    padding-bottom: 32px;
+  }
 }
 
 .header-icons-phone {
   vertical-align: middle;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: #757575;
+}
+
+@media (min-width: 1200px) {
+  .header-icons-phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+  }
 }
 
 .header-icons-mail {
   vertical-align: middle;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
   fill: #757575;
+}
+
+@media (min-width: 1200px) {
+  .header-icons-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .link:hover .header-icons-mail,
@@ -589,8 +660,108 @@ p {
   color: #757575;
 }
 
-.link-mail {
+@media (min-width: 1200px) {
+  .link-mail {
+    align-items: center;
+  }
+}
+
+.link-phone {
+  margin-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .link-phone {
+    margin-right: 30px;
+  }
+}
+
+.mobile-main-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid #ececec;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .mobile-main-nav {
+    display: none;
+  }
+}
+
+.mobile-main-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-list,
+.mobile-cont {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-item .menu-item {
+  font-size: 18px;
+  line-height: 1.16666;
+}
+
+.mobile-cont {
+  padding-top: 60px;
+}
+
+.mobile-cont-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mobile-menu-btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-btn .icon-cross {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu-svg {
+  width: 24px;
+  height: 16px;
+  fill: #000000;
+}
+
+.mobile-menu-btn:hover .mobile-menu-svg,
+.mobile-menu-btn:focus .mobile-menu-svg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-footer {
