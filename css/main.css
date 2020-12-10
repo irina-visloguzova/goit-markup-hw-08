@@ -528,8 +528,16 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
-  margin-right: 88px;
-  padding-bottom: 25px;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    padding-bottom: 25px;
+    margin-right: 88px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1098,6 +1106,7 @@ p {
   width: 40px;
   height: 40px;
   fill: #000000;
+  margin-bottom: 10px;
 }
 
 .mobile-menu-btn:hover .mobile-menu-svg,

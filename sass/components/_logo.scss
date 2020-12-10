@@ -7,9 +7,14 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $black-cl;
-  margin-right: 88px;
-  padding-bottom: 25px;
+  margin-right: auto;
+  margin-bottom: 15px;
 
+  @include for-size(tablet) {
+    padding-bottom: 25px;
+    margin-right: 88px;
+    margin-bottom: 0;
+  }
   @include for-size(desktop) {
     margin-right: 93px;
   }
