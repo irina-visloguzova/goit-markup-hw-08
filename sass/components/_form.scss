@@ -77,9 +77,14 @@
   margin-left: auto;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.16;
   color: $main-text-color;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .input-check-castom {
