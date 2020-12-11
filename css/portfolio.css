@@ -46,7 +46,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid tomato;
 }
 
 body {
@@ -1101,12 +1100,19 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
-  margin-right: -30px;
 }
 
 @media (min-width: 768px) {
   .portfolio-menu-list {
     justify-content: space-between;
+    margin-right: -30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-menu-list {
+    justify-content: space-between;
+    margin-right: 0;
   }
 }
 
