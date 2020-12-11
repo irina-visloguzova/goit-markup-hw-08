@@ -4,7 +4,7 @@
 
   @include for-size(desktop) {
     padding-top: 94px;
-    padding-bottom: 64px;
+    padding-bottom: 0px;
   }
 }
 
@@ -17,12 +17,14 @@
 }
 
 .text-pluses {
-    padding-bottom: 30px;
-  //ubrat dlya ostalnich
+  padding-bottom: 30px;
+
+  @include for-size(desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .list-pluses:not(:last-child) {
-  
   @include for-size(desktop) {
     width: calc(100% - 90px) / 4;
     margin-right: 30px;
