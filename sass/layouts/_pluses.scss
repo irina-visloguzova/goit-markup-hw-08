@@ -34,8 +34,7 @@
 .list-pluses {
   width: 100%;
   @include for-size(tablet) {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    width: 354px;
   }
 }
 

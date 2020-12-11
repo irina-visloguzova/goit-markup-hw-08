@@ -79,8 +79,11 @@ p {
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
-
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
   @include for-size(desktop) {
     display: flex;
     justify-content: space-between;

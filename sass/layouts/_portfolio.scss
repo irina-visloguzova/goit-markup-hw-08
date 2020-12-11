@@ -8,7 +8,13 @@
 
 .portfolio-menu-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  margin-bottom: -30px;
+  margin-right: -30px;
+
+  @include for-size(tablet) {
+    justify-content: space-between;
+  }
 }
 
 .portfolio-item {
@@ -22,23 +28,9 @@
   }
 
   @include for-size(desktop) {
-    width: 370px;
     flex-basis: calc((100% - 60px) / 3);
     margin-right: 0;
-  }
-
-  &:not(:nth-child(3n)) {
-    @include for-size(desktop) {
-      margin-right: 30px;
-    }
-  }
-
-  
-
-  &:not(:nth-last-child(-n + 3)) {
-    @include for-size(desktop) {
-      margin-bottom: 30px;
-    }
+    width: 370px;
   }
 
   &:hover,
